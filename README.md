@@ -36,5 +36,5 @@ git clone https://github.com/A4GOD-AMHG/FurnitureStore-HTML-CSS-JS.git
 
 ## Author
 
-- <a href="https://github.com/A4GOD-AMHG">Alexis Manuel Hurtado García </a>
+- Alexis Manuel Hurtado García (<https://github.com/A4GOD-AMHG>)
   
