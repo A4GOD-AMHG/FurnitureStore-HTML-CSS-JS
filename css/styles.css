@@ -26,6 +26,7 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     background-color: var(--white);
+    overflow-x: hidden;
 }
 
 h1,
@@ -881,4 +882,51 @@ a {
 
 .github img {
     width: 2.5rem;
+}
+
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-25%);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(25%);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.slide-in-left,
+.slide-in-right {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slide-in-left.active {
+    animation: slideInLeft 1s ease-out forwards;
+    opacity: 1;
+    visibility: visible;
+}
+
+.slide-in-right.active {
+    animation: slideInRight 1s ease-out forwards;
+    opacity: 1;
+    visibility: visible;
 }
