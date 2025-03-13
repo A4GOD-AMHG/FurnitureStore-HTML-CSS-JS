@@ -127,7 +127,7 @@ a {
 .navbar-links {
     display: flex;
     align-items: center;
-    gap: 10rem;
+    gap: 4rem;
 }
 
 .navbar-pages {
@@ -215,29 +215,31 @@ a {
     width: 3rem;
 }
 
+.mobile {
+    display: none;
+}
+
 @media (max-width: 768px) {
     .navbar-links {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 70%;
+        width: 60%;
         height: 100vh;
         background: var(--primary);
         flex-direction: column;
-        align-items: flex-start;
-        padding: 80px 30px;
-        gap: 3rem;
+        padding: 3rem;
+        gap: 1.5rem;
         transition: all 0.4s ease-in-out;
         z-index: 999;
+        border: solid .2rem var(--black);
     }
 
     .navbar-pages {
         flex-direction: column;
-        width: 100%;
-    }
-
-    .navbar-pages li {
-        width: 100%;
+        align-self: self-start;
+        padding: 0;
+        gap: 0;
     }
 
     .navbar-pages li a {
@@ -246,10 +248,12 @@ a {
         display: block;
     }
 
+    .mobile {
+        display: block;
+    }
+
     .navbar-user {
-        width: 100%;
-        justify-content: flex-start;
-        gap: 2rem;
+        display: none;
     }
 
     .menu {
@@ -437,14 +441,18 @@ a {
     .hero-img img {
         max-width: 80%;
     }
-
-    .hero-img-wrap:after {
-        display: none;
-    }
 }
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    .navbar {
+        padding-left: 2rem;
+    }
+
+    .navbar-links {
+        width: 40%;
+    }
+
     .hero-text h1 {
         font-size: 4rem;
     }
@@ -813,6 +821,148 @@ a {
     top: .8rem;
 }
 
+
+@media (max-width: 1024px) {
+    .products {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 5rem 0;
+    }
+
+    .intro {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .product {
+        width: calc(50% - 1rem);
+        margin-bottom: 2rem;
+    }
+
+    .about-us {
+        flex-direction: column;
+        padding: 5rem 0;
+    }
+
+    .about-us-text,
+    .about-us-img {
+        width: 100%;
+    }
+
+    .about-us-img {
+        margin-top: 3rem;
+    }
+
+    .help {
+        flex-direction: column;
+    }
+
+    .imgs-grid,
+    .help-text {
+        width: 100%;
+    }
+
+    .help-text {
+        padding: 2rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem 2rem;
+    }
+
+    .product {
+        width: 25rem;
+        margin-bottom: 2rem;
+    }
+
+    .product-item {
+        padding: 0;
+    }
+
+    .intro-title {
+        font-size: 2rem;
+    }
+
+    .intro-description {
+        font-size: 1.4rem;
+    }
+
+    .about-us-features {
+        grid-template-columns: 1fr;
+    }
+
+    .feature {
+        text-align: center;
+        padding: 0;
+    }
+
+    .about-us-img {
+        margin: 0;
+        padding: 3rem;
+    }
+
+    .help {
+        flex-direction: column-reverse;
+    }
+
+    .help-text {
+        padding: 0 3rem
+    }
+
+    .imgs-grid {
+        padding: 3rem;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .imgs-grid .grid {
+        grid-column: auto !important;
+        grid-row: auto !important;
+        padding: 0 !important;
+        margin: 0 auto;
+    }
+
+    .custom-list li {
+        width: 100%;
+    }
+
+    .imgs-grid::before,
+    .img-wrap:before,
+    .hero-img-wrap:after {
+        display: none;
+    }
+
+    .helper-button {
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .help-text p,
+    .custom-list li {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .products-shop {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about-us-img .img-wrap {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
 .footer-section {
     padding: 8rem 0 2rem 0;
     background: var(--primary);
@@ -1038,6 +1188,147 @@ a {
 
 .github img {
     width: 2.5rem;
+}
+
+@media (max-width: 1024px) {
+    .footer-section {
+        padding: 5rem 0 2rem 0;
+    }
+
+    .subscription-form form input {
+        width: 25%;
+    }
+
+    .sofa-img {
+        display: none;
+    }
+
+    .subscription-form {
+        margin-top: 5rem;
+        padding: 0 5rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
+
+    .social-networks,
+    .links-wrap {
+        width: 100%;
+        padding: 0;
+    }
+
+    .links-wrap {
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+
+    .links-wrap ul {
+        width: 45%;
+        margin-bottom: 2rem;
+    }
+
+    .custom-social {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .subscription-form form {
+        flex-wrap: wrap;
+    }
+
+    .subscription-form form .form-control {
+        width: 100%;
+    }
+
+    .button-telegram {
+        margin: 0 auto;
+        width: auto !important;
+        padding: 1rem 2rem;
+        height: 5rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-section {
+        padding: 3rem 0 2rem 0;
+    }
+
+    .subscription-form {
+        margin-top: 3rem;
+    }
+
+    .subscription-head {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .links-wrap {
+        flex-direction: column;
+    }
+
+    .links-wrap ul {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .links-wrap ul li {
+        margin-bottom: 1.5rem;
+    }
+
+    .social-networks {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .social-description {
+        padding: 0 3rem;
+        font-size: 1.4rem;
+    }
+
+    .custom-social li a {
+        width: 3.5rem;
+        height: 3.5rem;
+        line-height: 3.5rem;
+    }
+
+    .custom-social li a img {
+        width: 100%;
+    }
+
+    .custom-social img {
+        width: 1.8rem;
+    }
+
+    .github {
+        display: block;
+    }
+
+    .copyright p {
+        text-align: center !important;
+        font-size: 1.4rem !important;
+    }
+
+    .form-control {
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .sofa-img {
+        top: -15rem;
+    }
+
+    .footer-section .sofa-img img {
+        max-width: 25rem;
+    }
+
+    .links-wrap ul {
+        width: 30%;
+    }
 }
 
 

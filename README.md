@@ -27,12 +27,13 @@ git clone https://github.com/A4GOD-AMHG/FurnitureStore-HTML-CSS-JS.git
 - (Optional) Modify CSS styles in styles.css
 
 ## Screenshots
-<!-- 
+
 ![Mobile view](screenshots/mobile.png)
-![Ipad view](screenshots/ipad.png)
-![Desktop view](screenshots/desktop.png)
+<!-- ![Ipad view](screenshots/ipad.png) -->
+![Desktop view 1](screenshots/desktop1.png)
 ![Desktop view 2](screenshots/desktop2.png)
-![Desktop view 3](screenshots/desktop3.png) -->
+![Desktop view 3](screenshots/desktop3.png)
+![Desktop view 4](screenshots/desktop4.png)
 
 ## Author
 
