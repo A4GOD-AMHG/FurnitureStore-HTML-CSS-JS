@@ -73,7 +73,6 @@ a {
     color: var(--);
 }
 
-
 .mt-5 {
     margin-top: 5rem;
 }
@@ -82,7 +81,7 @@ a {
     width: 100%;
 }
 
-@media (min-width: 76.8rem) {
+@media (min-width: 768px) {
     .container {
         width: 90%;
         margin: 0 auto;
@@ -225,7 +224,6 @@ a {
         top: 0;
         right: -100%;
         width: 60%;
-        height: 100vh;
         background: var(--primary);
         flex-direction: column;
         padding: 3rem;
@@ -297,6 +295,17 @@ a {
     gap: 1rem;
     color: var(--black);
     padding: 4rem 0;
+}
+
+@media (max-width: 768px) {
+    .other-hero {
+        height: 15rem;
+        padding: 0 4rem;
+    }
+
+    .other-hero-content {
+        padding: 3rem 0;
+    }
 }
 
 .other-hero-content .hero-description {
@@ -1219,6 +1228,7 @@ a {
     }
 
     .links-wrap {
+        display: none;
         flex-wrap: wrap;
         gap: 2rem;
         margin-top: 3rem;
@@ -1257,6 +1267,7 @@ a {
 
     .subscription-form {
         margin-top: 3rem;
+        margin-bottom: 1rem;
     }
 
     .subscription-head {
@@ -1367,15 +1378,29 @@ a {
 }
 
 .slide-in-left.active {
-    animation: slideInLeft 1s ease-out forwards;
+    animation: slideInLeft .4s ease-out forwards;
     opacity: 1;
     visibility: visible;
 }
 
 .slide-in-right.active {
-    animation: slideInRight 1s ease-out forwards;
+    animation: slideInRight .4s ease-out forwards;
     opacity: 1;
     visibility: visible;
+}
+
+@media (min-width: 768px) {
+    .slide-in-left.active {
+        animation: slideInLeft 1s ease-out forwards;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .slide-in-right.active {
+        animation: slideInRight 1s ease-out forwards;
+        opacity: 1;
+        visibility: visible;
+    }
 }
 
 .contact-section {
