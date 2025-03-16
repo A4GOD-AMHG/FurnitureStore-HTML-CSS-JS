@@ -299,7 +299,7 @@ a {
 
 @media (max-width: 768px) {
     .other-hero {
-        height: 15rem;
+        height: 25rem;
         padding: 0 4rem;
     }
 
@@ -517,6 +517,84 @@ a {
 
 .products-shop .product {
     padding: 1rem 2rem;
+}
+
+@media (max-width: 1024px) {
+    .products-shop {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 8rem 0;
+        gap: 1.5rem;
+    }
+
+    .product-item {
+        padding-bottom: 4rem;
+    }
+
+    .product-title {
+        font-size: 1.5rem;
+    }
+
+    .product-price {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .products-shop {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 5rem 0;
+        gap: 1rem;
+    }
+
+    .product {
+        padding: 0.5rem 1rem;
+    }
+
+    .product-item {
+        padding-bottom: 3rem;
+    }
+
+    .product-title {
+        font-size: 1.4rem;
+        margin: 0.5rem;
+    }
+
+    .product-price {
+        font-size: 1.6rem;
+    }
+
+    .product-item .icon-cross {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+@media (max-width: 479px) {
+    .products-shop {
+        grid-template-columns: 1fr;
+        padding: 3rem 1rem;
+    }
+
+    .product-item {
+        padding-bottom: 2.5rem;
+    }
+
+    .product-title {
+        font-size: 1.3rem;
+    }
+
+    .product-price {
+        font-size: 1.5rem;
+    }
+
+    .product-item .icon-cross {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .product-item:hover:before {
+        height: 60%;
+    }
 }
 
 .product .product-title {
@@ -888,6 +966,8 @@ a {
     .product {
         width: 25rem;
         margin-bottom: 2rem;
+        margin: 0 auto;
+
     }
 
     .product-item {
