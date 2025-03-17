@@ -13,7 +13,7 @@ It is a Website for a Furniture Store, with navigation, animations and a beautif
 ## Features
 
 - User friendly UI with a responsive layout for all devices
-- Navigation between pages
+- Navigation between pages through navbar and menus
 - Animations on scrolling
 
 ## How to Use
@@ -29,7 +29,7 @@ git clone https://github.com/A4GOD-AMHG/FurnitureStore-HTML-CSS-JS.git
 ## Screenshots
 
 ![Mobile view](screenshots/mobile.png)
-<!-- ![Ipad view](screenshots/ipad.png) -->
+![Ipad view](screenshots/ipad.png)
 ![Desktop view 1](screenshots/desktop1.png)
 ![Desktop view 2](screenshots/desktop2.png)
 ![Desktop view 3](screenshots/desktop3.png)
